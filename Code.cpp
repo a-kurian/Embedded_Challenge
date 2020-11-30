@@ -6,10 +6,10 @@
 
 */
 
-int signal1[4] = [ 1, 2, 3, 4 ];
-int signal2[4] = [ 5, 6, 7, 8 ];
-int signal3[4] = [ 9, 10, 11, 12 ];
-int signal4[4] = [ 13, 14, 15, 16 ];
+int signal1[4] = { 1, 2, 3, 4};
+int signal2[4] = {5, 6, 7, 8};
+int signal3[4] = {9, 10, 11, 12};
+int signal4[4] = {13, 14, 15, 16};
 
 
 void setup()

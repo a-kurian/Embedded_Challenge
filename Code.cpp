@@ -6,6 +6,11 @@
 
 */
 
+#include <SoftwareSerial.h>
+SoftwareSerial RFID1a(17, 3); // RX and TX 
+SoftwareSerial RFID2a(18, 3)
+
+int i, ON = 1;
 int signal1[4] = { 1, 2, 3, 4};
 int signal2[4] = {5, 6, 7, 8};
 int signal3[4] = {9, 10, 11, 12};
@@ -44,6 +49,7 @@ void Signals_Working()
 void On_1()
 {
 
+    ON = 1;
     digitalWrite(signal2[1], HIGH);     
     digitalWrite(signal3[1], HIGH);
     digitalWrite(signal4[1], HIGH);
@@ -62,6 +68,7 @@ void On_1()
 void On_2()
 {
 
+    ON = 2;
     digitalWrite(signal1[1], HIGH);
     digitalWrite(signal3[1], HIGH);
     digitalWrite(signal4[1], HIGH);
@@ -80,6 +87,7 @@ void On_2()
 void On_3()
 {
 
+    ON = 3;
     digitalWrite(signal1[1], HIGH);
     digitalWrite(signal2[1], HIGH);
     digitalWrite(signal4[1], HIGH);
@@ -98,6 +106,7 @@ void On_3()
 void On_4()
 {
 
+    ON = 4;
     digitalWrite(signal1[1], HIGH);
     digitalWrite(signal2[1], HIGH);
     digitalWrite(signal3[1], HIGH);
